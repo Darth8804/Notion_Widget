@@ -10,7 +10,7 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap" rel="stylesheet">
 
 	<!-------->
 
@@ -24,41 +24,47 @@
 
 
 		.navMenu {
-			font-family: 'Advent Pro', sans-serif;
+			font-family: "Anek Devanagari", sans-serif;
 			padding: 8px;
 			text-align: center;
 			margin: 7px auto;
 			width: fit-content;
+			font-weight: <200>;
+  			font-style: extra-light;
 		}
 
 		.navMenu a {
-			color: #272727;
+			color: #000000;
 			text-decoration: none;
-			text-transform: uppercase;
 			display: inline-block;
 			padding: 6px;
+			margin-right: 10px;
+		}
+		
+		.navMenu i {
+			margin-right: 8px;
 		}
 
 		.background {
-			background-color: #ece5f0;
+			background-color: #fdd69c;
 		}
 
 		.border {
-			border: 1px solid #cccccc;
+			border: 1px solid #fdd69c;
 
 		}
 
 		.navMenu a:hover {
 
-			color: #d09c0b;
+			color: #840000;
 		}
 	</style>
 </head>
 
 <body>
 
-	<nav class="navMenu  border">
-		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"> </i> </a>
+	<nav class="navMenu  border background">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fi-sr-house-chimney"></i> </a>
 		<a id="classes" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-graduation-cap"></i> </a>
 		<a id="tasks" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-list-check"> </i> </a>
 		<a id="agenda" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-days"> </i> </a>
@@ -66,17 +72,13 @@
 		<a id="notes" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-laptop"></i> </a>
 		<a id="summaries" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-file-invoice"></i> </a>
 		<a id="deadlines" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-week"></i> </a>
-		<a id="grades" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bookmark"></i> Grades </a>
+		<a id="grades" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-percent"></i> Grades </a>
 		<a id="study hub" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-address-book"></i> Study Hub </a>
 		<a id="goals" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bullseye"></i> Goals </a>
 		<a id="projects" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bars-progress"></i> Projects </a>
 		<a id="databases" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-database"></i> Databases </a>
-	
-		
-
 
 	</nav>
-
 
 	<script>
 
@@ -84,7 +86,6 @@
 		if (direction === "vertical") {
 			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
 		}
-
 
 		function navigate(id) {
 
