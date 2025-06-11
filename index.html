@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-
 	<!-- Google Font -->
-
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap" rel="stylesheet">
-
 	<!-------->
-
 	<style>
 		* {
 			margin: 0;
@@ -21,8 +15,6 @@
 			-webkit-box-sizing: border-box;
 			box-sizing: border-box;
 		}
-
-
 		.navMenu {
 			font-family: "Anek Devanagari", sans-serif;
 			padding: 8px;
@@ -32,7 +24,6 @@
 			font-weight: <200>;
   			font-style: extra-light;
 		}
-
 		.navMenu a {
 			color: #000000;
 			text-decoration: none;
@@ -40,7 +31,6 @@
 			padding: 6px;
 			margin-right: 10px;
 		}
-		
 		.navMenu i {
 			margin-right: 8px;
 		}
@@ -48,45 +38,36 @@
 		.background {
 			background-color: #fdd69c;
 		}
-
 		.border {
 			border: 1px solid #fdd69c;
-
 		}
-
 		.navMenu a:hover {
-
 			color: #840000;
 		}
 	</style>
 </head>
-
 <body>
-
 	<nav class="navMenu  border background">
-		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fi-sr-house-chimney"></i> </a>
-		<a id="classes" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-graduation-cap"></i> </a>
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bars"></i> </a>
+		<a id="classes" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-swatchbook"></i> </a>
 		<a id="tasks" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-list-check"> </i> </a>
-		<a id="agenda" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-days"> </i> </a>
+		<a id="agenda" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book-bookmark"></i> </a>
 		<a id="inbox" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-inbox"></i> </a>
-		<a id="notes" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-laptop"></i> </a>
+		<a id="notes" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book-open"></i> </a>
 		<a id="summaries" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-file-invoice"></i> </a>
-		<a id="deadlines" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-week"></i> </a>
+		<a id="deadlines" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar"></i> </a>
 		<a id="grades" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-percent"></i> Grades </a>
-		<a id="study hub" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-address-book"></i> Study Hub </a>
+		<a id="study hub" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book-atlas"></i> Study Hub </a>
 		<a id="goals" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bullseye"></i> Goals </a>
 		<a id="projects" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bars-progress"></i> Projects </a>
 		<a id="databases" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-database"></i> Databases </a>
-
 	</nav>
-
 	<script>
 
 		let direction = "horizontal";
 		if (direction === "vertical") {
 			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
 		}
-
 		function navigate(id) {
 
 			if (id == 'home')
@@ -115,11 +96,7 @@
 				window.open("https://www.notion.so/Projects-20d7fd474eac803ea675f9bd6f884a70", '_blank').focus();
 			else if (id == 'databases')
 				window.open("https://www.notion.so/Databases-20c7fd474eac806f84dec3274d63a34d", '_blank').focus();
-
 		}
 	</script>
-
-
 </body>
-
 </html>
